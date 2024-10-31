@@ -36,7 +36,7 @@
                 <!-- Kitchenware Cards -->
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mb-10"> 
                     <!-- First Card -->
-                    <div id="card-1" class="card bg-base-100 w-full md:w-80 shadow-xl p-4">
+                    <div id="card-1" onclick="getValueOfCard1()" class="card bg-base-100 w-full md:w-80 shadow-xl p-4">
                         <figure class="px-4 md:px-10 pt-10 bg-base-200">
                             <img src="./images/prod1.png" alt="Product" class="rounded-xl mb-8" />
                         </figure>
@@ -50,12 +50,12 @@
                             </div>
                             <h2 class="card-title">K. Accessories</h2>
                             <div class="card-actions">
-                                <p id="prod-1-price">39.00 TK</p>
+                                <p ><span id="prod-1-price" >39.00</span> TK</p>
                             </div>
                         </div>
                     </div>
                     <!-- 2nd Card -->
-                    <div id="card-2"  class="card bg-base-100 w-full md:w-80 shadow-xl p-4">
+                    <div id="card-2" onclick="getValueOfCard2()" class="card bg-base-100 w-full md:w-80 shadow-xl p-4">
                         <figure class="px-4 md:px-10 pt-10 bg-base-200">
                             <img src="./images/prod2.png" alt="Product" class="rounded-xl mb-8" />
                         </figure>
@@ -69,12 +69,12 @@
                             </div>
                             <h2 class="card-title">K. Accessories</h2>
                             <div class="card-actions">
-                                <p id="prod-2-price" >25.00 TK</p>
+                                <p><span id="prod-2-price">25.00</span>TK</p>
                             </div>
                         </div>
                     </div>
                     <!-- 3rd Card -->
-                    <div id="card-3" class="card bg-base-100 w-full md:w-80 shadow-xl p-4">
+                    <div id="card-3" onclick="getValueOfCard3()" class="card bg-base-100 w-full md:w-80 shadow-xl p-4">
                         <figure class="px-4 md:px-10 pt-10 bg-base-200">
                             <img src="./images/prod3.png" alt="Product" class="rounded-xl mb-8" />
                         </figure>
@@ -88,7 +88,7 @@
                             </div>
                             <h2 class="card-title">K. Accessories</h2>
                             <div class="card-actions">
-                                <p id="prod-3-price" >49.00 TK</p>
+                                <p><span  id="prod-3-price" >49.00</span>TK</p>
                             </div>
                         </div>
                     </div>
@@ -101,7 +101,7 @@
                 <!-- Sports Cards -->
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
                     <!-- Fourth Card -->
-                    <div id="card-4" class="card bg-base-100 w-full md:w-80 shadow-xl p-4">
+                    <div id="card-4" onclick="getValueOfCard4()" class="card bg-base-100 w-full md:w-80 shadow-xl p-4">
                         <figure class="px-4 md:px-10 pt-10 bg-base-200">
                             <img src="./images/prod4.png" alt="Product" class="rounded-xl mb-8" />
                         </figure>
@@ -115,12 +115,12 @@
                             </div>
                             <h2 class="card-title">Sports Back Cap</h2>
                             <div class="card-actions">
-                                <p id="prod-4-price">49.00 TK</p>
+                                <p><span id="prod-4-price">49.00</span> TK</p>
                             </div>
                         </div>
                     </div>
                     <!-- 5th Card -->
-                    <div id="card-5" class="card bg-base-100 w-full md:w-80 shadow-xl p-4">
+                    <div id="card-5" onclick="getValueOfCard5()" class="card bg-base-100 w-full md:w-80 shadow-xl p-4">
                         <figure class="px-4 md:px-10 pt-10 bg-base-200">
                             <img src="./images/prod5.png" alt="Product" class="rounded-xl mb-8" />
                         </figure>
@@ -134,12 +134,12 @@
                             </div>
                             <h2 class="card-title">Sports Back Cap</h2>
                             <div class="card-actions">
-                                <p id="prod-5-price" >69.00 TK</p>
+                                <p><span  id="prod-5-price" >69.00</span>TK</p>
                             </div>
                         </div>
                     </div>
                     <!-- 6th Card -->
-                    <div id="card-6" class="card bg-base-100 w-full md:w-80 shadow-xl p-4">
+                    <div id="card-6" onclick="getValueOfCard6()" class="card bg-base-100 w-full md:w-80 shadow-xl p-4">
                         <figure class="px-4 md:px-10 pt-10 bg-base-200">
                             <img src="./images/prod6.png" alt="Product" class="rounded-xl mb-8" />
                         </figure>
@@ -153,7 +153,7 @@
                             </div>
                             <h2 class="card-title">Sports Back Cap</h2>
                             <div class="card-actions">
-                                <p id="prod-6-price" >159.00 TK</p>
+                                <p><span  id="prod-6-price" >159.00</span>TK</p>
                             </div>
                         </div>
                     </div>
@@ -165,7 +165,7 @@
                 <!-- FurnitureCards -->
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4"> 
                     <!-- 7th Card -->
-                    <div id="card-7" class="card bg-base-100 w-full md:w-80 shadow-xl p-4">
+                    <div id="card-7" onclick="getValueOfCard7()"  class="card bg-base-100 w-full md:w-80 shadow-xl p-4">
                         <figure class="px-4 md:px-10 pt-10 bg-base-200">
                             <img src="./images/prod7.png" alt="Product" class="rounded-xl mb-8" />
                         </figure>
@@ -179,12 +179,12 @@
                             </div>
                             <h2 class="card-title">Single Relax Chair</h2>
                             <div class="card-actions">
-                                <p id="prod-7-price">185.00 TK</p>
+                                <p><span  id="prod-7-price">185.00</span>TK</p>
                             </div>
                         </div>
                     </div>
                     <!-- 8th Card -->
-                    <div id="card-8" class="card bg-base-100 w-full md:w-80 shadow-xl p-4">
+                    <div id="card-8" onclick="getValueOfCard8()" class="card bg-base-100 w-full md:w-80 shadow-xl p-4">
                         <figure class="px-4 md:px-10 pt-10 bg-base-200">
                             <img src="./images/prod8.png" alt="Product" class="rounded-xl mb-8" />
                         </figure>
@@ -198,12 +198,12 @@
                             </div>
                             <h2 class="card-title">Children play</h2>
                             <div class="card-actions">
-                                <p id="prod-8-price" >299.00 TK</p>
+                                <p><span id="prod-8-price" >299.00</span>TK</p>
                             </div>
                         </div>
                     </div>
                     <!-- 9th Card -->
-                    <div id="card-9" class="card bg-base-100 w-full md:w-80 shadow-xl p-4">
+                    <div id="card-9" onclick="getValueOfCard9()" class="card bg-base-100 w-full md:w-80 shadow-xl p-4">
                         <figure class="px-4 md:px-10 pt-10 bg-base-200">
                             <img src="./images/prod9.png" alt="Product" class="rounded-xl mb-8" />
                         </figure>
@@ -217,7 +217,7 @@
                             </div>
                             <h2 class="card-title">Flexible Sofa</h2>
                             <div class="card-actions">
-                                <p id="prod-9-price" >339.00 TK</p>
+                                <p><span  id="prod-9-price">339.00</span>TK</p>
                             </div>
                         </div>
                     </div>
@@ -231,7 +231,7 @@
                 <div class="bg-base-100 shadow-xl p-6">
                     <h3 class="text-2xl font-semibold mb-4">Have a coupon?</h3>
                     <div class="flex items-center">
-                        <input type="text" placeholder="Coupon code" class="px-4 py-2 border border-gray-300 rounded-l-md focus:outline-none" />
+                        <input id="coupon-field" type="text" placeholder="Coupon code" class="px-4 py-2 border border-gray-300 rounded-l-md focus:outline-none" />
                         <button id="btn-apply" class="px-4 py-2 bg-pink-500 text-white font-semibold rounded-r-md hover:bg-pink-600" disabled>Apply</button>
                     </div>
                 </div>
@@ -240,10 +240,10 @@
                 <div class="space-y-2">
                     <p class="text-xl font-semibold">Total price: <span id="total-price">0</span> TK</p>
                     <p class="text-xl font-semibold">Discount: <span id="total-discount">0</span> TK</p>
-                    <p class="text-xl font-semibold">Total: <span id="total">0</span> TK</p>
+                    <p class="text-xl font-semibold">Total: <span id="after-discount-total">0</span> TK</p>
                 </div>
                 <hr class="my-4">
-                <button id="btn-purchase" onclick="document.getElementById('purchase-modal').showModal()" class="bg-pink-500 rounded-lg py-2 px-6 w-full mt-4 text-white font-semibold  hover:bg-pink-600">Make Purchase</button>
+                <button id="btn-purchase" onclick="document.getElementById('purchase-modal').showModal()" class="bg-pink-500 rounded-lg py-2 px-6 w-full mt-4 text-white font-semibold  hover:bg-pink-600" disabled >Make Purchase</button>
             </div>
              <!-- Modal -->
     <dialog id="purchase-modal" class="modal">
@@ -252,11 +252,12 @@
             <h2 class="text-lg font-bold">Congratulations</h2>
             <p class="py-4">You Purchase the product</p>
             <div class="modal-action">
-                <button onclick="window.location.href='index.html';" class="px-4 py-2 bg-pink-500 text-white font-semibold rounded-lg hover:bg-pink-600 ">Go Home</button>
+                <button id="go-home" onclick="window.location.href='index.html';" class="px-4 py-2 bg-pink-500 text-white font-semibold rounded-lg hover:bg-pink-600 ">Go Home</button>
             </div>
         </div>
     </dialog>
         </div>
     </main>
+    <script src="/scripts/utilities.js"></script>
 </body>
 </html>
