@@ -9,38 +9,60 @@ function innerValueOfCard(prodValueId) {
 function getValueOfCard1() {
     const card1Price = innerValueOfCard('prod-1-price');
     accessElementInnerText('total-price', card1Price);
+    selectedProductEntry('K. Accessories',card1Price);
 }
 function getValueOfCard2() {
     const card2Price = innerValueOfCard('prod-2-price');
     accessElementInnerText('total-price', card2Price);
+    selectedProductEntry('K. Accessories',card2Price);
 }
 function getValueOfCard3() {
     const card3Price = innerValueOfCard('prod-3-price');
     accessElementInnerText('total-price', card3Price);
+    selectedProductEntry('Home Cooker',card3Price);
 }
 function getValueOfCard4() {
     const card4Price = innerValueOfCard('prod-4-price');
     accessElementInnerText('total-price', card4Price);
+    selectedProductEntry('Sports Black Cap',card4Price);
 }
 function getValueOfCard5() {
     const card5Price = innerValueOfCard('prod-5-price');
     accessElementInnerText('total-price', card5Price);
+    selectedProductEntry('Sports Jersey',card5Price);
+    
 }
 function getValueOfCard6() {
     const card6Price = innerValueOfCard('prod-6-price');
     accessElementInnerText('total-price', card6Price);
+    selectedProductEntry('Sports Shoe',card6Price);
 }
 function getValueOfCard7() {
     const card7Price = innerValueOfCard('prod-7-price');
     accessElementInnerText('total-price', card7Price);
+    selectedProductEntry('Single Relax Chair',card7Price);
+    
 }
 function getValueOfCard8() {
     const card8Price = innerValueOfCard('prod-8-price');
     accessElementInnerText('total-price', card8Price);
+    selectedProductEntry('Children play',card8Price);
 }
 function getValueOfCard9() {
     const card9Price = innerValueOfCard('prod-9-price');
     accessElementInnerText('total-price', card9Price);
+    selectedProductEntry('Flexible Sofa',card9Price);
+}
+//Selected product Entry
+
+function selectedProductEntry(productName,productPrice){
+    const productEntry = document.getElementById('product-entry');
+    const count = productEntry.childElementCount;
+    const p = document.createElement('p');
+    p.classList.add('my-5','font-semibold');
+    p.innerHTML = `${count + 1}. ${productName} ${'='} ${productPrice} ${'Tk'}`;
+    productEntry.appendChild(p);
+
 }
 
 // total price calculation

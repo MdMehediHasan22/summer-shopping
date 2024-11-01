@@ -86,7 +86,7 @@
                                 <input type="radio" name="rating-1" class="mask mask-star-2 bg-orange-400" />
                                 <input type="radio" name="rating-1" class="mask mask-star-2 bg-orange-400" />
                             </div>
-                            <h2 class="card-title">K. Accessories</h2>
+                            <h2 class="card-title">Home Cooker</h2>
                             <div class="card-actions">
                                 <p><span  id="prod-3-price" >49.00</span>TK</p>
                             </div>
@@ -113,7 +113,7 @@
                                 <input type="radio" name="rating-4" class="mask mask-star-2 bg-orange-400" />
                                 <input type="radio" name="rating-4" class="mask mask-star-2 bg-orange-400" />
                             </div>
-                            <h2 class="card-title">Sports Back Cap</h2>
+                            <h2 class="card-title">Sports Black Cap</h2>
                             <div class="card-actions">
                                 <p><span id="prod-4-price">49.00</span> TK</p>
                             </div>
@@ -132,7 +132,7 @@
                                 <input type="radio" name="rating-4" class="mask mask-star-2 bg-orange-400" />
                                 <input type="radio" name="rating-4" class="mask mask-star-2 bg-orange-400" />
                             </div>
-                            <h2 class="card-title">Sports Back Cap</h2>
+                            <h2 class="card-title">Sports Jersey</h2>
                             <div class="card-actions">
                                 <p><span  id="prod-5-price" >69.00</span>TK</p>
                             </div>
@@ -151,7 +151,7 @@
                                 <input type="radio" name="rating-4" class="mask mask-star-2 bg-orange-400" />
                                 <input type="radio" name="rating-4" class="mask mask-star-2 bg-orange-400" />
                             </div>
-                            <h2 class="card-title">Sports Back Cap</h2>
+                            <h2 class="card-title">Sports Shoe</h2>
                             <div class="card-actions">
                                 <p><span  id="prod-6-price" >159.00</span>TK</p>
                             </div>
@@ -228,22 +228,26 @@
             
             <!-- Area Calculator -->
             <div class="w-full max-w-md mx-auto p-4 sm:p-6 lg:w-[400px]">
-                <div class="bg-base-100 shadow-xl p-6">
+                <div class="bg-base-100 shadow-xl p-6 mb-8">
                     <h3 class="text-2xl font-semibold mb-4">Have a coupon?</h3>
                     <div class="flex items-center">
                         <input id="coupon-field" type="text" placeholder="Coupon code" class="px-4 py-2 border border-gray-300 rounded-l-md focus:outline-none" />
                         <button id="btn-apply" class="px-4 py-2 bg-pink-500 text-white font-semibold rounded-r-md hover:bg-pink-600" disabled>Apply</button>
                     </div>
                 </div>
-                <div id="calculation-entry" class="space-y-2"></div>
-                <hr class="my-4">
-                <div class="space-y-2">
-                    <p class="text-xl font-semibold">Total price: <span id="total-price">0</span> TK</p>
-                    <p class="text-xl font-semibold">Discount: <span id="total-discount">0</span> TK</p>
-                    <p class="text-xl font-semibold">Total: <span id="after-discount-total">0</span> TK</p>
+                <div class="bg-base-100 shadow-xl p-6">
+                    <div id="product-entry" class="space-y-2">
+
+                    </div>
+                    <hr class="my-4">
+                    <div class="space-y-2">
+                        <p class="text-xl font-semibold">Total price: <span id="total-price">0</span> TK</p>
+                        <p class="text-xl font-semibold">Discount: <span id="total-discount">0</span> TK</p>
+                        <p class="text-xl font-semibold">Total: <span id="after-discount-total">0</span> TK</p>
+                    </div>
+                    <hr class="my-4">
+                    <button id="btn-purchase" onclick="document.getElementById('purchase-modal').showModal()" class="bg-pink-500 rounded-lg py-2 px-6 w-full mt-4 text-white font-semibold  hover:bg-pink-600" disabled >Make Purchase</button>
                 </div>
-                <hr class="my-4">
-                <button id="btn-purchase" onclick="document.getElementById('purchase-modal').showModal()" class="bg-pink-500 rounded-lg py-2 px-6 w-full mt-4 text-white font-semibold  hover:bg-pink-600" disabled >Make Purchase</button>
             </div>
              <!-- Modal -->
     <dialog id="purchase-modal" class="modal">
